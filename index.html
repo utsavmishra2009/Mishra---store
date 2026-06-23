@@ -1,0 +1,404 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Utsav Home & Kitchen Store</title>
+
+<link rel="stylesheet" href="style.css">
+
+<link rel="stylesheet"
+href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+</head>
+
+<body>
+
+<!-- Navbar -->
+
+<nav class="navbar">
+
+<div class="logo">
+<h2>🏠 Utsav Store</h2>
+</div>
+
+<div class="search-box">
+<input type="text"
+id="searchInput"
+placeholder="Search Products..."
+onkeyup="searchProducts()">
+</div>
+
+<div class="nav-icons">
+
+<div class="cart-btn">
+<i class="fa-solid fa-cart-shopping"></i>
+<span id="cartCount">0</span>
+</div>
+
+</div>
+
+</nav>
+
+<!-- Hero Section -->
+
+<section class="hero">
+
+<div class="hero-content">
+
+<h1>Home & Kitchen Essentials</h1>
+
+<p>
+Premium Quality Products At Best Prices
+</p>
+
+<button class="shop-btn">
+Shop Now
+</button>
+
+</div>
+
+</section>
+
+<!-- Categories -->
+
+<section class="categories">
+
+<div class="category">
+🍳 Kitchen
+</div>
+
+<div class="category">
+🏠 Home
+</div>
+
+<div class="category">
+💡 Lighting
+</div>
+
+<div class="category">
+🧹 Cleaning
+</div>
+
+<div class="category">
+🚿 Bathroom
+</div>
+
+</section>
+
+<!-- Products -->
+
+<section class="products" id="productContainer">
+
+<!-- Product 1 -->
+
+<div class="card">
+
+<span class="discount">
+50% OFF
+</span>
+
+<img src="images/chopper.jpg">
+
+<h3>Vegetable Chopper</h3>
+
+<p class="price">
+₹299
+</p>
+
+<button
+onclick="addToCart('Vegetable Chopper',299)">
+Add To Cart
+</button>
+
+</div>
+
+<!-- Product 2 -->
+
+<div class="card">
+
+<span class="discount">
+40% OFF
+</span>
+
+<img src="images/oil.jpg">
+
+<h3>Oil Dispenser</h3>
+
+<p class="price">
+₹399
+</p>
+
+<button
+onclick="addToCart('Oil Dispenser',399)">
+Add To Cart
+</button>
+
+</div>
+
+<!-- Product 3 -->
+
+<div class="card">
+
+<span class="discount">
+45% OFF
+</span>
+
+<img src="images/container.jpg">
+
+<h3>Storage Container Set</h3>
+
+<p class="price">
+₹499
+</p>
+
+<button
+onclick="addToCart('Storage Container Set',499)">
+Add To Cart
+</button>
+
+</div>
+
+<!-- Product 4 -->
+
+<div class="card">
+
+<span class="discount">
+55% OFF
+</span>
+
+<img src="images/spice-rack.jpg">
+
+<h3>Spice Rack</h3>
+
+<p class="price">
+₹349
+</p>
+
+<button
+onclick="addToCart('Spice Rack',349)">
+Add To Cart
+</button>
+
+</div>
+
+<!-- Product 5 -->
+
+<div class="card">
+
+<span class="discount">
+35% OFF
+</span>
+
+<img src="images/knife-set.jpg">
+
+<h3>Knife Set</h3>
+
+<p class="price">
+₹599
+</p>
+
+<button
+onclick="addToCart('Knife Set',599)">
+Add To Cart
+</button>
+
+</div>
+
+<!-- Product 6 -->
+
+<div class="card">
+
+<span class="discount">
+60% OFF
+</span>
+
+<img src="images/sink-organizer.jpg">
+
+<h3>Sink Organizer</h3>
+
+<p class="price">
+₹299
+</p>
+
+<button
+onclick="addToCart('Sink Organizer',299)">
+Add To Cart
+</button>
+
+</div>
+
+<!-- Product 7 -->
+
+<div class="card">
+
+<span class="discount">
+50% OFF
+</span>
+
+<img src="images/lamp.jpg">
+
+<h3>LED Night Lamp</h3>
+
+<p class="price">
+₹399
+</p>
+
+<button
+onclick="addToCart('LED Night Lamp',399)">
+Add To Cart
+</button>
+
+</div>
+
+<!-- Product 8 -->
+
+<div class="card">
+
+<span class="discount">
+45% OFF
+</span>
+
+<img src="images/wall-clock.jpg">
+
+<h3>Wall Clock</h3>
+
+<p class="price">
+₹699
+</p>
+
+<button
+onclick="addToCart('Wall Clock',699)">
+Add To Cart
+</button>
+
+</div>
+
+<!-- Product 9 -->
+
+<div class="card">
+
+<span class="discount">
+50% OFF
+</span>
+
+<img src="images/shoe-rack.jpg">
+
+<h3>Shoe Rack</h3>
+
+<p class="price">
+₹999
+</p>
+
+<button
+onclick="addToCart('Shoe Rack',999)">
+Add To Cart
+</button>
+
+</div>
+
+<!-- Product 10 -->
+
+<div class="card">
+
+<span class="discount">
+55% OFF
+</span>
+
+<img src="images/mop.jpg">
+
+<h3>Cleaning Mop</h3>
+
+<p class="price">
+₹499
+</p>
+
+<button
+onclick="addToCart('Cleaning Mop',499)">
+Add To Cart
+</button>
+
+</div>
+
+<!-- Product 11 -->
+
+<div class="card">
+
+<span class="discount">
+40% OFF
+</span>
+
+<img src="images/bottle-set.jpg">
+
+<h3>Water Bottle Set</h3>
+
+<p class="price">
+₹599
+</p>
+
+<button
+onclick="addToCart('Water Bottle Set',599)">
+Add To Cart
+</button>
+
+</div>
+
+<!-- Product 12 -->
+
+<div class="card">
+
+<span class="discount">
+65% OFF
+</span>
+
+<img src="images/bathroom-organizer.jpg">
+
+<h3>Bathroom Organizer</h3>
+
+<p class="price">
+₹399
+</p>
+
+<button
+onclick="addToCart('Bathroom Organizer',399)">
+Add To Cart
+</button>
+
+</div>
+
+</section>
+
+<!-- WhatsApp & UPI -->
+
+<section class="order-section">
+
+<a href="https://wa.me/917906218830">
+<button class="whatsapp-btn">
+WhatsApp Order
+</button>
+</a>
+
+<a href="upi://pay?pa=utsavmishra01@ptyes&pn=UtsavStore">
+<button class="pay-btn">
+Pay Now
+</button>
+</a>
+
+</section>
+
+<!-- Footer -->
+
+<footer>
+
+<h3>Utsav Home & Kitchen Store</h3>
+
+<p>
+Best Quality Products For Every Home
+</p>
+
+</footer>
+
+<script src="script.js"></script>
+
+</body>
+</html>
